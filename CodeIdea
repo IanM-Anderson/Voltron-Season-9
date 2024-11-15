@@ -1,0 +1,7 @@
+We will have multiple tasks that you have to complete until the user fails.
+
+We will start with 1 task (push a button, X or something)
+Then every minute we will add a new task that you have to complete.
+
+So there will be rounds, where you need to finish all of the tasks within 1min.
+Once you finish all the tasks within that minute then you will have completed that round and then a 10 sec timmer will start to the next round
