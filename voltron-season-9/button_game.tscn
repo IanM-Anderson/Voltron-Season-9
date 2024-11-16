@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://c27dc6ptnl4ow"]
+
+[ext_resource type="Script" path="res://button_game.gd" id="1_8f0ey"]
+[ext_resource type="Texture2D" uid="uid://t0s2vvl2tru4" path="res://Untitled.png" id="2_0q145"]
+[ext_resource type="Script" path="res://background.gd" id="3_3jp3o"]
+[ext_resource type="Texture2D" uid="uid://70unkr46ygy4" path="res://Win.png" id="4_f7i4b"]
+[ext_resource type="Texture2D" uid="uid://jjywbp7yov0f" path="res://icon.svg" id="5_qms1n"]
+[ext_resource type="Script" path="res://win.gd" id="5_tai8i"]
+
+[node name="ButtonGame" type="Node2D"]
+position = Vector2(534, 301)
+script = ExtResource("1_8f0ey")
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(42.5, 24.5)
+scale = Vector2(0.670718, 0.591667)
+texture = ExtResource("2_0q145")
+script = ExtResource("3_3jp3o")
+
+[node name="Win" type="Sprite2D" parent="."]
+visible = false
+z_index = -1
+position = Vector2(44, 26.5)
+scale = Vector2(0.671296, 0.60463)
+texture = ExtResource("4_f7i4b")
+script = ExtResource("5_tai8i")
+
+[node name="Button" type="Button" parent="."]
+offset_left = -324.0
+offset_top = -144.0
+offset_right = 343.0
+offset_bottom = 166.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Button"]
+position = Vector2(335.75, 151)
+scale = Vector2(5.18359, 2.4375)
+texture = ExtResource("5_qms1n")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button" to="Background" method="_on_button_pressed"]
+[connection signal="pressed" from="Button" to="Win" method="_on_button_pressed"]

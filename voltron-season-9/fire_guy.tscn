@@ -1,0 +1,71 @@
+[gd_scene load_steps=9 format=3 uid="uid://b0gc1liu4tvjx"]
+
+[ext_resource type="PackedScene" uid="uid://sv7v7hfxif7y" path="res://Dragable.tscn" id="1_7mdi1"]
+[ext_resource type="Texture2D" uid="uid://t0s2vvl2tru4" path="res://Untitled.png" id="2_i1jvn"]
+[ext_resource type="Texture2D" uid="uid://jjywbp7yov0f" path="res://icon.svg" id="2_kbfuq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_66yx7"]
+size = Vector2(144, 118)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhdso"]
+size = Vector2(1166, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sapkw"]
+size = Vector2(20, 647)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n3dsw"]
+size = Vector2(1158, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a3rss"]
+size = Vector2(29, 659.5)
+
+[node name="FireGuy" type="Node2D"]
+
+[node name="Guy" parent="." instance=ExtResource("1_7mdi1")]
+position = Vector2(120, 525)
+
+[node name="Fire" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fire"]
+position = Vector2(1045, 552)
+shape = SubResource("RectangleShape2D_66yx7")
+
+[node name="Sprite2D" type="Sprite2D" parent="Fire"]
+position = Vector2(1045, 549)
+scale = Vector2(1.10938, 0.96875)
+texture = ExtResource("2_kbfuq")
+
+[node name="Floor" type="RigidBody2D" parent="."]
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+position = Vector2(579, 628)
+shape = SubResource("RectangleShape2D_bhdso")
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor"]
+position = Vector2(575, 630)
+scale = Vector2(0.677083, 0.0222222)
+texture = ExtResource("2_i1jvn")
+
+[node name="Left Wall" type="RigidBody2D" parent="."]
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Left Wall"]
+position = Vector2(-7, 313.5)
+shape = SubResource("RectangleShape2D_sapkw")
+
+[node name="Top Wall" type="RigidBody2D" parent="."]
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Top Wall"]
+position = Vector2(569, -11)
+shape = SubResource("RectangleShape2D_n3dsw")
+
+[node name="Right Wall" type="RigidBody2D" parent="."]
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Right Wall"]
+position = Vector2(1162.5, 306.25)
+shape = SubResource("RectangleShape2D_a3rss")
+
+[connection signal="body_entered" from="Fire" to="Guy" method="_on_fire_body_entered"]

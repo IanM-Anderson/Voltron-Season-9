@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://rlrsw0ecnpoe"]
+
+[ext_resource type="Script" path="res://drag.gd" id="1_xingw"]
+[ext_resource type="Texture2D" uid="uid://jjywbp7yov0f" path="res://icon.svg" id="2_317qy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ncoto"]
+size = Vector2(129.5, 128.5)
+
+[node name="dragable" type="RigidBody2D"]
+input_pickable = true
+gravity_scale = 0.0
+script = ExtResource("1_xingw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.25, 0.75)
+shape = SubResource("RectangleShape2D_ncoto")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 1)
+texture = ExtResource("2_317qy")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
