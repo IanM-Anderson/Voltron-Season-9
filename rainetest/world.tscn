@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://c55niklqgxl22"]
+
+[ext_resource type="PackedScene" uid="uid://udv7gyt5holv" path="res://bob.tscn" id="1_vv1yk"]
+[ext_resource type="PackedScene" uid="uid://yxy133x2r3gi" path="res://Walls.tscn" id="2_2ibah"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(0, 4)
+
+[node name="Bob" parent="." instance=ExtResource("1_vv1yk")]
+position = Vector2(577, 214)
+
+[node name="Evil Bob" parent="." instance=ExtResource("1_vv1yk")]
+position = Vector2(280, 133)
+
+[node name="Wall Top" parent="." instance=ExtResource("2_2ibah")]
+position = Vector2(606, 580)
+
+[node name="Wall Right" parent="." instance=ExtResource("2_2ibah")]
+position = Vector2(1084, -98)
+rotation = 1.5708
+
+[node name="Wall Left" parent="." instance=ExtResource("2_2ibah")]
+position = Vector2(58, -101)
+rotation = -1.5708
