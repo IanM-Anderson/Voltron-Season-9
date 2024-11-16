@@ -1,0 +1,30 @@
+Blue,Green,Red,Yellow,Pink,Purple,Gray,Black,White,Brown,Colours
+Winnipeg,Regina,Edmonton,Victoria,Ottawa,Toronto,Halifax,Saskatoon,Calgary,Vancouver,Hamilton,Canadian Cities
+Dog,Cat,Horse,Bear,Deer,Mouse,Rabbit,Fox,Mammals
+Sparrow,Eagle,Hawk,Raven,Vulture,Woodpecker,Penguin,Flamingo,Birds
+Tree,Bush,Flower,Grass,Plants
+Mountain,River,Valley,Ocean,Beach,Lake,Hill,Terrain
+Mars,Jupiter,Saturn,Neptune,Uranus,Venus,Planets
+Car,Truck,Motorcycle,Tank,Boat,Plane,Train,Modes of Transportation
+Apple,Banana,Grape,Strawberry,Mango,Pineapple,Cherry,Peach,Lemon,Fruits
+Celery,Spinach,Carrot,Tomato,Pepper,Corn,Radish,Broccoli,Vegetables
+Coke,Pepsi,7up,Dr. Pepper,Root Beer,Ginger Ale,Iced Tea,Sodas
+Four,Seven,Nine,Ten,Two,Three,Five,One Hundred,Numbers
+Circle,Triangle,Square,Rectangle,Pentagon,Rhombus,Shapes
+Chair,Bed,Table,Desk,Couch,Television,Wardrobe,Furniture
+Russia,Canada,China,Germany,India,France,Australia,Brazil,Countries
+Penny,Dime,Quarter,Loonie,Toonie,Coins
+Aluminum,Cobalt,Copper,Iron,Zinc,Tungsten,Titanium,Tin,Lead,Metals
+Wrath,Pride,Envy,Gluttony,Greed,Lust,Deadly Sins
+Aries,Capricorn,Cancer,Sagittarius,Leo,Virgo,Pisces,Taurus,Gemini,Libra,Scorpio,Aquarius,Zodiac Signs
+Shirt,Pants,Shoes,Socks,Hat,Scarf,Clothes
+Skin,Lung,Kidney,Liver,Intestine,Stomach,Brain,Spleen,Bladder,Organs
+Period,Comma,Semicolon,Exclamation Mark,Question Mark,Hyphen,Underscore,Apostrophe,Punctuation
+Topaz,Quartz,Opal,Peridot,Garnet,Torumaline,Amethyst,Sapphire,Gemstone
+Tuba,Trumpet,Clarinet,Flute,Trombone,French Horn,Oboe,Xylophone,Saxophone,Instruments
+Hockey,Golf,Football,Soccer,Basketball,Volleyball,Tennis,Badminton,Baseball,Curling,Sports
+Alpha,Beta,Gamma,Delta,Omega,Pi,Theta,Greek Letters
+Google Chrome,Firefox,Edge,DuckDuckGo,Safari,Browsers
+Ariel,Aurora,Rapunzel,Elsa,Merida,Tiana,Belle,Jasmine,Mulan,Cinderella,Disney Princesses
+Mustard,Ketchup,Relish,Mayonnaise,Vinegar,Ranch,Condiments
+Flamenco,Tango,Swing,Tap,Polka,Waltz,Disco,Ballet,Dances
