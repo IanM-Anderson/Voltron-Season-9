@@ -1,13 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://dj40csj8nm486"]
+[gd_scene load_steps=7 format=3 uid="uid://dj40csj8nm486"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_fvtcq"]
 [ext_resource type="PackedScene" uid="uid://c3f1o5m580aum" path="res://Trivia.tscn" id="1_m2h1q"]
 [ext_resource type="PackedScene" uid="uid://dk8o187c1bo13" path="res://unique_words.tscn" id="2_soey6"]
+[ext_resource type="PackedScene" uid="uid://c27dc6ptnl4ow" path="res://button_game.tscn" id="3_vif0h"]
 [ext_resource type="PackedScene" uid="uid://c180wu80c5yw0" path="res://odd_one_out.tscn" id="4_huule"]
-[ext_resource type="PackedScene" uid="uid://b0gc1liu4tvjx" path="res://fire_guy.tscn" id="6_a1s2x"]
+[ext_resource type="PackedScene" uid="uid://cccenau78j70o" path="res://waldo.tscn" id="6_7k5qa"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_fvtcq")
+
+[node name="ButtonGame" parent="." instance=ExtResource("3_vif0h")]
+position = Vector2(838, 149)
+scale = Vector2(0.5, 0.5)
 
 [node name="UniqueWords" parent="." instance=ExtResource("2_soey6")]
 position = Vector2(570, 321)
@@ -21,4 +26,4 @@ scale = Vector2(0.5, 0.5)
 position = Vector2(-10, 6)
 scale = Vector2(0.5, 0.5)
 
-[node name="FireGuy" parent="." instance=ExtResource("6_a1s2x")]
+[node name="Waldo" parent="." instance=ExtResource("6_7k5qa")]

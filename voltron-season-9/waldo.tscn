@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cccenau78j70o"]
+
+[ext_resource type="Script" path="res://waldo.gd" id="1_kh6uf"]
+[ext_resource type="Texture2D" uid="uid://c85x7q2ju0eqm" path="res://waldo.svg" id="2_35ni6"]
+
+[node name="Waldo" type="Node2D"]
+script = ExtResource("1_kh6uf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(538, 306)
+scale = Vector2(0.0987484, 0.0766224)
+texture = ExtResource("2_35ni6")
+
+[node name="Button" type="Button" parent="Sprite2D"]
+z_index = -1
+offset_left = -255.0
+offset_top = -353.0
+offset_right = 261.0
+offset_bottom = 222.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Sprite2D/Button" to="." method="_on_button_pressed"]
