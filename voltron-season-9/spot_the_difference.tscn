@@ -478,6 +478,14 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 40
 text = "Spot the Difference"
 
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Cover" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(586, 324.5)
+scale = Vector2(0.666667, 0.600926)
+texture = ExtResource("2_fdske")
+
 [connection signal="pressed" from="Button1A" to="." method="_on_button_1a_pressed"]
 [connection signal="pressed" from="Button2A" to="." method="_on_button_2a_pressed"]
 [connection signal="pressed" from="Button3A" to="." method="_on_button_3a_pressed"]
@@ -510,3 +518,4 @@ text = "Spot the Difference"
 [connection signal="pressed" from="Button14B" to="." method="_on_button_14b_pressed"]
 [connection signal="pressed" from="Button15B" to="." method="_on_button_15b_pressed"]
 [connection signal="pressed" from="Button16B" to="." method="_on_button_16b_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
