@@ -188,4 +188,12 @@ position = Vector2(576, 329)
 scale = Vector2(0.67853, 0.624074)
 texture = ExtResource("4_3tegs")
 
+[node name="Button" type="Button" parent="."]
+offset_left = -23.0
+offset_top = 2.0
+offset_right = 1160.0
+offset_bottom = 647.0
+flat = true
+
 [connection signal="body_entered" from="Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

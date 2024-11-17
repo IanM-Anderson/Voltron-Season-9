@@ -1,6 +1,8 @@
 extends Node2D
+
+
 var won = false
-var moveable = false
+var moveableMaze = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -15,4 +17,4 @@ func _process(delta: float) -> void:
 
 
 func _on_button_pressed() -> void:
-	moveable = not moveable
+	moveableMaze = not moveableMaze
