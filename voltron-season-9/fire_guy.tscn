@@ -1,8 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://b0gc1liu4tvjx"]
+[gd_scene load_steps=11 format=3 uid="uid://b0gc1liu4tvjx"]
 
 [ext_resource type="PackedScene" uid="uid://sv7v7hfxif7y" path="res://Dragable.tscn" id="1_7mdi1"]
 [ext_resource type="Texture2D" uid="uid://t0s2vvl2tru4" path="res://Untitled.png" id="2_i1jvn"]
 [ext_resource type="Texture2D" uid="uid://jjywbp7yov0f" path="res://icon.svg" id="2_kbfuq"]
+[ext_resource type="Texture2D" uid="uid://d1rmhc5b4uyn2" path="res://Question Background.png" id="3_0f61h"]
+[ext_resource type="Texture2D" uid="uid://70unkr46ygy4" path="res://Win.png" id="5_wfxgw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_66yx7"]
 size = Vector2(144, 118)
@@ -45,7 +47,7 @@ shape = SubResource("RectangleShape2D_bhdso")
 [node name="Sprite2D" type="Sprite2D" parent="Floor"]
 position = Vector2(575, 630)
 scale = Vector2(0.677083, 0.0222222)
-texture = ExtResource("2_i1jvn")
+texture = ExtResource("3_0f61h")
 
 [node name="Left Wall" type="RigidBody2D" parent="."]
 gravity_scale = 0.0
@@ -67,5 +69,18 @@ gravity_scale = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Right Wall"]
 position = Vector2(1162.5, 306.25)
 shape = SubResource("RectangleShape2D_a3rss")
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(578.5, 319.5)
+scale = Vector2(0.668403, 0.591667)
+texture = ExtResource("2_i1jvn")
+
+[node name="Win" type="Sprite2D" parent="."]
+visible = false
+z_index = -10
+position = Vector2(575.5, 310)
+scale = Vector2(0.659144, 0.566667)
+texture = ExtResource("5_wfxgw")
 
 [connection signal="body_entered" from="Fire" to="Guy" method="_on_fire_body_entered"]

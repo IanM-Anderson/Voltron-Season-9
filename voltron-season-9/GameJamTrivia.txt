@@ -1,0 +1,58 @@
+What colour is the sky?,Blue,Red,Green,Yellow,1
+What is the closest planet to the sun?,Earth,Mercury,Venus,Mars,2
+Which planet is the largest?,Jupiter,Saturn,Uranus,Neptune,1
+How many legs does a spider have?,Four,Six,Eight,Ten,3
+What is the world's largest mammal?,Elephant,Giraffe,Blue Whale,Hippopotamus,3
+Which of these shapes has four equal sides?,Triangle,Rectangle,Circle,Square,4
+Which of these shapes has four sides?,Rhombus,Triangle,Hexagon,Star,1
+Which of these shapes has six sides?,Octagon,Decagon,Hexagon,Heptagon,3
+What is H20 commonly known as?,Oxygen,Water,Hydrogen,Salt,2
+What do bees produce?,Milk,Honey,Silk,Pollen,2
+What is the 8th month of the year?,October,July,September,August,4
+Who is the Greek god of war?,Hermes,Ares,Apollo,Zeus,2
+What country has the largest population?,India,China,United States,Brazil,1
+What country has the largest surface area?,Canada,Russia,China,Brazil,2
+Which country's flag isn't only red and white?,Japan,Canada,Mexico,Poland,3
+What continent is Mongolia in?,Asia,Europe,Africa,South America,1
+Which country first landed on the moon?,Russia,China,United States,France,3
+Which of these isn't part of an atom?,Proton,Electron,Photon,Neutron,3
+Who wrote Romeo and Juliet?,Dickens,Shakespeare,Poe,Tolkien,2
+Who directed Jurassic Park?,Spielberg,Tarantino,Cameron,Nolan,1
+What year did Canada become a country?,1776,1812,1867,1898,3
+Which Canadian Prime Minister held office the longest?,John A. MacDonald,Wilfred Laurier,William Lyon Mackenzie King, Pierre Elliot Trudeau,4
+How many provinces and territories does Canada have?,11,12,13,14,3
+What's the capital of Ontario?,Toronto,Ottawa,Hamilton,Windsor,1
+Which of these isn't a provincial capital?,Winnipeg,Saskatoon,Edmonton,Victoria,2
+Which of these doesn't live in Antarctica?,Penguin,Seal,Albatross,Polar Bear,4
+Which of these is not an NHL team?,Seattle Kraken,Anaheim Ducks,Minnesota Vikings,Florida Panthers,3
+Which of these is not a Canadian NHL team?,Maple Leafs,Senators,Penguins,Canucks,3
+Which of these fruits is green inside?,Kiwi,Mango,Dragonfruit,Cantaloupe,1
+Which of these is not a golf term?,Bogey,Love,Birdie,Eagle,2
+Who is credited with the discovery of evolution?,Newton,Einstein,Darwin,Fleming,3
+What year did Frozen come out?,2007,2010,2013,2016,3
+What is Sherlock Holmes' assistant's name?,Wilson,Williams,Walter,Watson,4
+Which is not a Star Wars character?,Han Solo,Obi-Wan Kenobi,Chewbacca,Mr. Spock,4
+Which is Ash Ketchum's star Pokémon?,Pichu,Pikachu,Mimikyu,Raichu,2
+Which of these characters wears a purple hat?,Mario,Luigi,Wario,Waluigi,4
+Which of these superheros' real name is Tony Stark?,Iron Man,Captain America,Hulk,Spider-Man,1
+Which of these superheros' real name is Clark Kent?,Superman,Batman,The Flash,Aquaman,1
+Which is the most commonly used English letter?,E,A,T,O,1
+What is the first letter of the Greek alphabet?,Gamma,Omega,Alpha,Eta,3
+What band signs the song "Under Pressure"?, ABBA,Queen,Journey,The Beatles,2
+Which of these is a Canadian company?,McDonald's,Burger King,Taco Bell,Tim Hortons,4
+How many zeros in a billion?,3,6,9,12,3
+Which of these isn't one of the seven deadly sins?,Envy,Temperance,Pride,Wrath,2
+What organ is used to breathe?,Lungs,Heart,Liver,Brain,1
+What colour is the Canadian 50$ bill?,Red,Gold,Green,Blue,1
+Which one of these is on the Canadian two-dollar coin?,Beaver,Boat,Moose,Polar Bear,4
+Which of these isn't one of the ghosts from Pac-Man?,Blinky,Inky,Pinky,Stinky,4
+Which of these Zodiac signs is represented by a Crab?,Aries,Cancer,Capricorn,Virgo,2
+Which bird is first given on the third day of Christmas?,Turtle Dove,French Hen,Goose,Swan,2
+Which of these is not a brass instrument?,Trumpet,Saxophone,Trombone,French Horn,2
+Who is the villain of The Little Mermaid?,Gaston,Cruella,Ursula,Maleficent,3
+
+
+
+
+
+
