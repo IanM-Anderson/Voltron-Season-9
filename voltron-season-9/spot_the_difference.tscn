@@ -1,0 +1,512 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5asogdb08qmk"]
+
+[ext_resource type="Script" path="res://spot_the_difference.gd" id="1_6whev"]
+[ext_resource type="Texture2D" uid="uid://t0s2vvl2tru4" path="res://Untitled.png" id="2_fdske"]
+[ext_resource type="Texture2D" uid="uid://70unkr46ygy4" path="res://Win.png" id="3_4b40b"]
+
+[node name="SpotTheDifference" type="Node2D"]
+script = ExtResource("1_6whev")
+
+[node name="Button1A" type="Button" parent="."]
+offset_left = 85.0
+offset_top = 157.0
+offset_right = 185.0
+offset_bottom = 257.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button1A"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button2A" type="Button" parent="."]
+offset_left = 85.0
+offset_top = 259.0
+offset_right = 185.0
+offset_bottom = 359.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button2A"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button3A" type="Button" parent="."]
+offset_left = 85.0
+offset_top = 362.0
+offset_right = 185.0
+offset_bottom = 462.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button3A"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button4A" type="Button" parent="."]
+offset_left = 85.0
+offset_top = 464.0
+offset_right = 185.0
+offset_bottom = 564.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button4A"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button5A" type="Button" parent="."]
+offset_left = 190.0
+offset_top = 157.0
+offset_right = 290.0
+offset_bottom = 257.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button5A"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button6A" type="Button" parent="."]
+offset_left = 190.0
+offset_top = 259.0
+offset_right = 290.0
+offset_bottom = 359.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button6A"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button7A" type="Button" parent="."]
+offset_left = 190.0
+offset_top = 362.0
+offset_right = 290.0
+offset_bottom = 462.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button7A"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button8A" type="Button" parent="."]
+offset_left = 190.0
+offset_top = 464.0
+offset_right = 290.0
+offset_bottom = 564.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button8A"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button9A" type="Button" parent="."]
+offset_left = 295.0
+offset_top = 158.0
+offset_right = 395.0
+offset_bottom = 258.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button9A"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button10A" type="Button" parent="."]
+offset_left = 295.0
+offset_top = 260.0
+offset_right = 395.0
+offset_bottom = 360.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button10A"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button11A" type="Button" parent="."]
+offset_left = 295.0
+offset_top = 363.0
+offset_right = 395.0
+offset_bottom = 463.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button11A"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button12A" type="Button" parent="."]
+offset_left = 295.0
+offset_top = 465.0
+offset_right = 395.0
+offset_bottom = 565.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button12A"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button13A" type="Button" parent="."]
+offset_left = 400.0
+offset_top = 158.0
+offset_right = 500.0
+offset_bottom = 258.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button13A"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button14A" type="Button" parent="."]
+offset_left = 400.0
+offset_top = 260.0
+offset_right = 500.0
+offset_bottom = 360.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button14A"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button15A" type="Button" parent="."]
+offset_left = 400.0
+offset_top = 363.0
+offset_right = 500.0
+offset_bottom = 463.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button15A"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button16A" type="Button" parent="."]
+offset_left = 400.0
+offset_top = 465.0
+offset_right = 500.0
+offset_bottom = 565.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button16A"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button1B" type="Button" parent="."]
+offset_left = 634.0
+offset_top = 157.0
+offset_right = 734.0
+offset_bottom = 257.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button1B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button2B" type="Button" parent="."]
+offset_left = 634.0
+offset_top = 259.0
+offset_right = 734.0
+offset_bottom = 359.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button2B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button3B" type="Button" parent="."]
+offset_left = 634.0
+offset_top = 362.0
+offset_right = 734.0
+offset_bottom = 462.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button3B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button4B" type="Button" parent="."]
+offset_left = 634.0
+offset_top = 464.0
+offset_right = 734.0
+offset_bottom = 564.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button4B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button5B" type="Button" parent="."]
+offset_left = 739.0
+offset_top = 157.0
+offset_right = 839.0
+offset_bottom = 257.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button5B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button6B" type="Button" parent="."]
+offset_left = 739.0
+offset_top = 259.0
+offset_right = 839.0
+offset_bottom = 359.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button6B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button7B" type="Button" parent="."]
+offset_left = 739.0
+offset_top = 362.0
+offset_right = 839.0
+offset_bottom = 462.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button7B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button8B" type="Button" parent="."]
+offset_left = 739.0
+offset_top = 464.0
+offset_right = 839.0
+offset_bottom = 564.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button8B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button9B" type="Button" parent="."]
+offset_left = 844.0
+offset_top = 158.0
+offset_right = 944.0
+offset_bottom = 258.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button9B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button10B" type="Button" parent="."]
+offset_left = 844.0
+offset_top = 260.0
+offset_right = 944.0
+offset_bottom = 360.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button10B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button11B" type="Button" parent="."]
+offset_left = 844.0
+offset_top = 363.0
+offset_right = 944.0
+offset_bottom = 463.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button11B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button12B" type="Button" parent="."]
+offset_left = 844.0
+offset_top = 465.0
+offset_right = 944.0
+offset_bottom = 565.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button12B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button13B" type="Button" parent="."]
+offset_left = 949.0
+offset_top = 158.0
+offset_right = 1049.0
+offset_bottom = 258.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button13B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button14B" type="Button" parent="."]
+offset_left = 949.0
+offset_top = 260.0
+offset_right = 1049.0
+offset_bottom = 360.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button14B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button15B" type="Button" parent="."]
+offset_left = 949.0
+offset_top = 363.0
+offset_right = 1049.0
+offset_bottom = 463.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button15B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Button16B" type="Button" parent="."]
+offset_left = 949.0
+offset_top = 465.0
+offset_right = 1049.0
+offset_bottom = 565.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button16B"]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 86.0
+offset_bottom = 70.0
+theme_override_font_sizes/normal_font_size = 31
+text = "1A"
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(576.5, 327)
+scale = Vector2(0.670718, 0.598148)
+texture = ExtResource("2_fdske")
+
+[node name="Win" type="Sprite2D" parent="."]
+visible = false
+z_index = -10
+position = Vector2(582, 332)
+scale = Vector2(0.668981, 0.603704)
+texture = ExtResource("3_4b40b")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 371.0
+offset_top = 44.0
+offset_right = 762.0
+offset_bottom = 127.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 40
+text = "Spot the Difference"
+
+[connection signal="pressed" from="Button1A" to="." method="_on_button_1a_pressed"]
+[connection signal="pressed" from="Button2A" to="." method="_on_button_2a_pressed"]
+[connection signal="pressed" from="Button3A" to="." method="_on_button_3a_pressed"]
+[connection signal="pressed" from="Button4A" to="." method="_on_button_4a_pressed"]
+[connection signal="pressed" from="Button5A" to="." method="_on_button_5a_pressed"]
+[connection signal="pressed" from="Button6A" to="." method="_on_button_6a_pressed"]
+[connection signal="pressed" from="Button7A" to="." method="_on_button_7a_pressed"]
+[connection signal="pressed" from="Button8A" to="." method="_on_button_8a_pressed"]
+[connection signal="pressed" from="Button9A" to="." method="_on_button_9a_pressed"]
+[connection signal="pressed" from="Button10A" to="." method="_on_button_10a_pressed"]
+[connection signal="pressed" from="Button11A" to="." method="_on_button_11a_pressed"]
+[connection signal="pressed" from="Button12A" to="." method="_on_button_12a_pressed"]
+[connection signal="pressed" from="Button13A" to="." method="_on_button_13a_pressed"]
+[connection signal="pressed" from="Button14A" to="." method="_on_button_14a_pressed"]
+[connection signal="pressed" from="Button15A" to="." method="_on_button_15a_pressed"]
+[connection signal="pressed" from="Button16A" to="." method="_on_button_16a_pressed"]
+[connection signal="pressed" from="Button1B" to="." method="_on_button_1b_pressed"]
+[connection signal="pressed" from="Button2B" to="." method="_on_button_2b_pressed"]
+[connection signal="pressed" from="Button3B" to="." method="_on_button_3b_pressed"]
+[connection signal="pressed" from="Button4B" to="." method="_on_button_4b_pressed"]
+[connection signal="pressed" from="Button5B" to="." method="_on_button_5b_pressed"]
+[connection signal="pressed" from="Button6B" to="." method="_on_button_6b_pressed"]
+[connection signal="pressed" from="Button7B" to="." method="_on_button_7b_pressed"]
+[connection signal="pressed" from="Button8B" to="." method="_on_button_8b_pressed"]
+[connection signal="pressed" from="Button9B" to="." method="_on_button_9b_pressed"]
+[connection signal="pressed" from="Button10B" to="." method="_on_button_10b_pressed"]
+[connection signal="pressed" from="Button11B" to="." method="_on_button_11b_pressed"]
+[connection signal="pressed" from="Button12B" to="." method="_on_button_12b_pressed"]
+[connection signal="pressed" from="Button13B" to="." method="_on_button_13b_pressed"]
+[connection signal="pressed" from="Button14B" to="." method="_on_button_14b_pressed"]
+[connection signal="pressed" from="Button15B" to="." method="_on_button_15b_pressed"]
+[connection signal="pressed" from="Button16B" to="." method="_on_button_16b_pressed"]
