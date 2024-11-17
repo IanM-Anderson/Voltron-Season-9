@@ -6,7 +6,7 @@ var moveable = false
 var lateralSpeed = 10
 var speed = 200
 
-var fail = false
+var failed = false
 
 
 func _physics_process(delta: float) -> void:
@@ -35,6 +35,14 @@ func _on_button_button_up() -> void:
 # Runs when guy enters fire
 func _on_fire_body_entered(body: Node2D) -> void:
 	visible = false
-	fail = true
+	failed = true
 	
 	# Rest of the code here for the fail event
+
+func moveBack():
+	velocity = Vector2(-10000, 0)
+	move_and_slide()
+	move_and_slide()
+	move_and_slide()
+	velocity = Vector2(0, 0)
+	visible = true

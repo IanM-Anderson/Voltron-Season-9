@@ -1,8 +1,12 @@
 extends Node2D
 
-var fail = false
+var failed = false
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	fail = get_node("Guy").fail
+	failed = get_node("Guy").failed
+
+func reset():
+	print("Fire Reset")
+	get_node("Guy").moveBack()

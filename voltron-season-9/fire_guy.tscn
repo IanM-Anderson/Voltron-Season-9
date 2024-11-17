@@ -26,7 +26,7 @@ size = Vector2(29, 659.5)
 script = ExtResource("1_skc78")
 
 [node name="Guy" parent="." instance=ExtResource("1_7mdi1")]
-position = Vector2(120, 525)
+position = Vector2(78, 289)
 
 [node name="Fire" type="Area2D" parent="."]
 
@@ -40,6 +40,7 @@ scale = Vector2(1.10938, 0.96875)
 texture = ExtResource("2_kbfuq")
 
 [node name="Floor" type="RigidBody2D" parent="."]
+position = Vector2(6, -3)
 gravity_scale = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
