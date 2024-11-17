@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://b0gc1liu4tvjx"]
+[gd_scene load_steps=12 format=3 uid="uid://b0gc1liu4tvjx"]
 
 [ext_resource type="PackedScene" uid="uid://sv7v7hfxif7y" path="res://Dragable.tscn" id="1_7mdi1"]
+[ext_resource type="Script" path="res://fire_guy.gd" id="1_skc78"]
 [ext_resource type="Texture2D" uid="uid://t0s2vvl2tru4" path="res://Untitled.png" id="2_i1jvn"]
 [ext_resource type="Texture2D" uid="uid://jjywbp7yov0f" path="res://icon.svg" id="2_kbfuq"]
 [ext_resource type="Texture2D" uid="uid://d1rmhc5b4uyn2" path="res://Question Background.png" id="3_0f61h"]
@@ -22,6 +23,7 @@ size = Vector2(1158, 20)
 size = Vector2(29, 659.5)
 
 [node name="FireGuy" type="Node2D"]
+script = ExtResource("1_skc78")
 
 [node name="Guy" parent="." instance=ExtResource("1_7mdi1")]
 position = Vector2(120, 525)
