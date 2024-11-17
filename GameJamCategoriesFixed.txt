@@ -1,0 +1,30 @@
+Blue,Green,Red,Yellow,Pink,Purple,Gray,Black,White,Brown
+Winnipeg,Regina,Edmonton,Victoria,Ottawa,Toronto,Halifax,Saskatoon,Calgary,Vancouver,Hamilton
+Dog,Cat,Horse,Bear,Deer,Mouse,Rabbit,Fox
+Sparrow,Eagle,Hawk,Raven,Vulture,Woodpecker,Penguin,Flamingo
+Tree,Bush,Flower,Grass,Bamboo
+Mountain,River,Valley,Ocean,Beach,Lake,Hill
+Mars,Jupiter,Saturn,Neptune,Uranus,Venus
+Car,Truck,Motorcycle,Tank,Boat,Plane,Train
+Apple,Banana,Grape,Strawberry,Mango,Pineapple,Cherry,Peach,Lemon
+Celery,Spinach,Carrot,Tomato,Pepper,Corn,Radish,Broccoli
+Coke,Pepsi,7up,Dr. Pepper,Root Beer,Ginger Ale,Iced Tea
+Four,Seven,Nine,Ten,Two,Three,Five,One Hundred
+Circle,Triangle,Square,Rectangle,Pentagon,Rhombus
+Chair,Bed,Table,Desk,Couch,Television,Wardrobe
+Russia,Canada,China,Germany,India,France,Australia,Brazil
+Penny,Dime,Quarter,Loonie,Toonie
+Aluminum,Cobalt,Copper,Iron,Zinc,Tungsten,Titanium,Tin,Lead
+Wrath,Pride,Envy,Gluttony,Greed,Lust
+Aries,Capricorn,Cancer,Sagittarius,Leo,Virgo,Pisces,Taurus,Gemini,Libra,Scorpio,Aquarius
+Shirt,Pants,Shoes,Socks,Hat,Scarf
+Skin,Lung,Kidney,Liver,Intestine,Stomach,Brain,Spleen,Bladder
+Period,Comma,Semicolon,Exclamation Mark,Question Mark,Hyphen,Underscore,Apostrophe
+Topaz,Quartz,Opal,Peridot,Garnet,Torumaline,Amethyst,Sapphire
+Tuba,Trumpet,Clarinet,Flute,Trombone,French Horn,Oboe,Xylophone,Saxophone,Piano
+Hockey,Golf,Football,Soccer,Basketball,Volleyball,Tennis,Badminton,Baseball,Curling
+Alpha,Beta,Gamma,Delta,Omega,Pi,Theta
+Google Chrome,Firefox,Edge,DuckDuckGo,Safari
+Ariel,Aurora,Rapunzel,Elsa,Merida,Tiana,Belle,Jasmine,Mulan,Cinderella
+Mustard,Ketchup,Relish,Mayonnaise,Vinegar,Ranch
+Flamenco,Tango,Swing,Tap,Polka,Waltz,Disco,Ballet
