@@ -5,8 +5,8 @@ extends Node2D
 func _process(delta: float) -> void:
 	if get_node("MultiChoice").won == true:
 		print("Trivia Win")
-	if get_node("ButtonGame").won == true:
-		print("Button Win")
+	#if get_node("ButtonGame").won == true:
+		#print("Button Win")
 	if get_node("OddOneOut").won == true:
 		print("Odd Win")
 	if get_node("UniqueWords").won == true:
