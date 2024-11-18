@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://bt4pris48k22q"]
+
+[ext_resource type="Texture2D" uid="uid://crlkphxykt0ei" path="res://icon.svg" id="1_npx5i"]
+
+[sub_resource type="GDScript" id="GDScript_jwgra"]
+script/source = "extends CharacterBody2D
+
+const SPEED = 250.0
+
+func _physics_process(delta: float) -> void:
+	velocity.x = 0
+	velocity.y = 0
+
+	if Input.is_action_pressed(\"ui_left\"):
+		velocity.x = -SPEED
+	if Input.is_action_pressed(\"ui_right\"):
+		velocity.x = SPEED
+	if Input.is_action_pressed(\"ui_up\"):
+		velocity.y = -SPEED
+	if Input.is_action_pressed(\"ui_down\"):
+		velocity.y = SPEED
+
+	move_and_slide()
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3if5n"]
+size = Vector2(36, 37)
+
+[node name="Character" type="CharacterBody2D"]
+script = SubResource("GDScript_jwgra")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(29, 30)
+scale = Vector2(0.296875, 0.296875)
+texture = ExtResource("1_npx5i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(29, 29.5)
+shape = SubResource("RectangleShape2D_3if5n")

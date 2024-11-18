@@ -1,0 +1,140 @@
+[gd_scene load_steps=13 format=3 uid="uid://xpdbguw8mwyb"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_uel0a"]
+[ext_resource type="PackedScene" uid="uid://cy81dib1vpqd0" path="res://math_questions.tscn" id="2_2oa3p"]
+[ext_resource type="PackedScene" uid="uid://dmp5en72hhhan" path="res://button_game.tscn" id="3_5e7lx"]
+[ext_resource type="PackedScene" uid="uid://dvu3qw6tx70xa" path="res://unique_words.tscn" id="5_jlmaj"]
+[ext_resource type="PackedScene" uid="uid://ct1kjwoit6cyl" path="res://odd_one_out.tscn" id="6_ete5c"]
+[ext_resource type="Texture2D" uid="uid://jqls7cwmswwp" path="res://GameOver.png" id="6_jf6ms"]
+[ext_resource type="PackedScene" uid="uid://c2oagfhpnn21m" path="res://trash_game.tscn" id="6_yhos6"]
+[ext_resource type="PackedScene" uid="uid://c1x414hnfjkmu" path="res://trash_spawn.tscn" id="7_8cpvs"]
+[ext_resource type="PackedScene" uid="uid://chfmy0nvsybdm" path="res://trivia.tscn" id="7_38qwk"]
+[ext_resource type="PackedScene" uid="uid://ctqj44ptteded" path="res://waldo.tscn" id="8_bkhip"]
+[ext_resource type="PackedScene" uid="uid://c220feh1wbpdg" path="res://song_quiz.tscn" id="8_tuy6n"]
+[ext_resource type="PackedScene" uid="uid://b5asogdb08qmk" path="res://spot_the_difference.tscn" id="12_2q8uj"]
+
+[node name="Main" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+script = ExtResource("1_uel0a")
+
+[node name="MainMenu" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainMenu"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenu/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Title" type="Label" parent="MainMenu/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+theme_override_font_sizes/font_size = 40
+text = "Task Manager"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenu/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="StartButton" type="Button" parent="MainMenu/HBoxContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+action_mode = 0
+text = "Start"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MainMenu"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="Credits" type="Label" parent="MainMenu/HBoxContainer2"]
+layout_mode = 2
+text = "CSSA Game Jam 2024
+Team: Voltron Season 9
+Members: Ian Anderson, Nolan Coughlan, Rowan Hildebrand, Raine Deluz"
+
+[node name="GUI" type="MarginContainer" parent="."]
+layout_mode = 2
+
+[node name="Screen" type="VBoxContainer" parent="GUI"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="LevelLabel" type="Label" parent="GUI/Screen"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Level "
+
+[node name="LevelTimer" type="Timer" parent="GUI/Screen"]
+wait_time = 70.0
+
+[node name="DelayTimer" type="Timer" parent="GUI/Screen"]
+wait_time = 3.0
+
+[node name="TimeLabel" type="Label" parent="GUI/Screen"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Time: "
+
+[node name="Time" type="Timer" parent="GUI/Screen"]
+wait_time = 31.0
+
+[node name="ScoreLabel" type="Label" parent="GUI/Screen"]
+visible = false
+layout_mode = 2
+text = "Score: "
+
+[node name="ButtonGame" parent="GUI/Screen" instance=ExtResource("3_5e7lx")]
+position = Vector2(83, 529)
+
+[node name="UniqueWords" parent="GUI/Screen" instance=ExtResource("5_jlmaj")]
+position = Vector2(124, -260)
+
+[node name="MathQuestions" parent="GUI/Screen" instance=ExtResource("2_2oa3p")]
+position = Vector2(-12, 316)
+
+[node name="TrashGameScreen" parent="GUI/Screen" instance=ExtResource("6_yhos6")]
+
+[node name="TrashSpawn" parent="GUI/Screen" instance=ExtResource("7_8cpvs")]
+
+[node name="OddOneOut" parent="GUI/Screen" instance=ExtResource("6_ete5c")]
+position = Vector2(196, 108)
+
+[node name="SpotTheDifference" parent="GUI/Screen" instance=ExtResource("12_2q8uj")]
+position = Vector2(-188, -36)
+
+[node name="Trivia" parent="GUI/Screen" instance=ExtResource("7_38qwk")]
+position = Vector2(-148, 108)
+
+[node name="Waldo" parent="GUI/Screen" instance=ExtResource("8_bkhip")]
+
+[node name="SongQuiz" parent="GUI/Screen" instance=ExtResource("8_tuy6n")]
+position = Vector2(124, -76)
+
+[node name="GameOver" type="Sprite2D" parent="GUI"]
+visible = false
+position = Vector2(556, 304)
+scale = Vector2(2.31325, 1.83051)
+texture = ExtResource("6_jf6ms")
+
+[node name="Message" type="Label" parent="GUI/GameOver"]
+offset_left = -138.0
+offset_top = -142.0
+offset_right = 221.0
+offset_bottom = -76.0
+text = "Game Over Message"
+
+[connection signal="pressed" from="MainMenu/HBoxContainer/VBoxContainer/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="timeout" from="GUI/Screen/LevelTimer" to="." method="_on_level_timer_timeout"]
+[connection signal="timeout" from="GUI/Screen/DelayTimer" to="." method="_on_delay_timer_timeout"]
+[connection signal="timeout" from="GUI/Screen/Time" to="." method="_on_time_timeout"]

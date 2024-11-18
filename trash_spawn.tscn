@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1x414hnfjkmu"]
+
+[ext_resource type="PackedScene" uid="uid://3vl206wtwb05" path="res://trash.tscn" id="1_bm5wk"]
+[ext_resource type="Script" path="res://trash_spawn.gd" id="1_hko6k"]
+
+[node name="TrashSpawn" type="Node2D"]
+script = ExtResource("1_hko6k")
+
+[node name="Trash" parent="." instance=ExtResource("1_bm5wk")]
+
+[node name="Trash2" parent="." instance=ExtResource("1_bm5wk")]
+
+[node name="Trash3" parent="." instance=ExtResource("1_bm5wk")]

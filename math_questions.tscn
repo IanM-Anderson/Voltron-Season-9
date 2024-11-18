@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://cy81dib1vpqd0"]
+
+[ext_resource type="Script" path="res://line_edit.gd" id="1_6k6ka"]
+[ext_resource type="Script" path="res://math_questions.gd" id="1_exexd"]
+[ext_resource type="Texture2D" uid="uid://70unkr46ygy4" path="res://GreenBG.png" id="2_4h8db"]
+[ext_resource type="Texture2D" uid="uid://bgicrga1kn4rs" path="res://GreyBG.png" id="3_82f80"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4tbx4"]
+
+[node name="MathQuestions" type="Node2D"]
+script = ExtResource("1_exexd")
+
+[node name="GreenBG" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(132, 67.75)
+scale = Vector2(0.134259, 0.110648)
+texture = ExtResource("2_4h8db")
+
+[node name="WhiteBG" type="Sprite2D" parent="."]
+position = Vector2(132, 67.86)
+scale = Vector2(0.134259, 0.110852)
+texture = ExtResource("3_82f80")
+
+[node name="Answer" type="LineEdit" parent="."]
+unique_name_in_owner = true
+anchors_preset = -1
+anchor_right = 0.196
+anchor_bottom = 0.173
+offset_left = 40.0
+offset_top = 80.0
+offset_right = 0.207993
+offset_bottom = -0.104004
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/selection_color = Color(0, 0, 0, 0.4)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4tbx4")
+placeholder_text = "Type your answer here"
+expand_to_text_length = true
+context_menu_enabled = false
+script = ExtResource("1_6k6ka")
+
+[node name="MathTimer" type="Timer" parent="Answer"]
+wait_time = 2.0
+
+[node name="Question" type="Label" parent="Answer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -1.226
+anchor_bottom = -1.226
+offset_top = -24.768
+offset_right = 184.0
+offset_bottom = 23.232
+theme_type_variation = &"HeaderSmall"
+text = "Question"
+
+[connection signal="text_submitted" from="Answer" to="." method="_on_answer_text_submitted"]

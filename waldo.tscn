@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctqj44ptteded"]
+
+[ext_resource type="Script" path="res://waldo.gd" id="1_kh6uf"]
+[ext_resource type="Texture2D" uid="uid://p61h87mylcye" path="res://waldo.svg" id="2_35ni6"]
+
+[node name="Waldo" type="Node2D"]
+script = ExtResource("1_kh6uf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(538, 306)
+scale = Vector2(0.0987484, 0.0766224)
+texture = ExtResource("2_35ni6")
+
+[node name="Button" type="Button" parent="Sprite2D"]
+z_index = -1
+offset_left = -255.0
+offset_top = -353.0
+offset_right = 261.0
+offset_bottom = 222.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Text" type="Label" parent="."]
+offset_left = 848.0
+offset_top = 8.0
+offset_right = 1102.0
+offset_bottom = 34.0
+theme_override_font_sizes/font_size = 18
+text = "Where's Waldo? Click on him!"
+
+[connection signal="pressed" from="Sprite2D/Button" to="." method="_on_button_pressed"]
