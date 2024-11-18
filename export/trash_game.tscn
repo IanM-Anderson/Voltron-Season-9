@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://c2oagfhpnn21m"]
+
+[ext_resource type="Script" path="res://trash_game.gd" id="1_xlg0n"]
+[ext_resource type="Texture2D" uid="uid://bi3rxdo8j0spv" path="res://TrashCan.png" id="3_xt383"]
+[ext_resource type="Texture2D" uid="uid://cbp52351l4464" path="res://WhiteBG.png" id="4_o0fos"]
+[ext_resource type="Texture2D" uid="uid://70unkr46ygy4" path="res://GreenBG.png" id="5_06ng6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g16by"]
+size = Vector2(171.5, 126.5)
+
+[node name="TrashGameScreen" type="Node2D"]
+script = ExtResource("1_xlg0n")
+
+[node name="TrashCan" type="Area2D" parent="."]
+position = Vector2(576, 328)
+scale = Vector2(0.95, 0.9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TrashCan"]
+position = Vector2(483.211, 222.222)
+scale = Vector2(0.95, 0.9)
+shape = SubResource("RectangleShape2D_g16by")
+
+[node name="Sprite2D" type="Sprite2D" parent="TrashCan/CollisionShape2D"]
+position = Vector2(-0.500007, 0)
+scale = Vector2(0.95, 0.9)
+texture = ExtResource("3_xt383")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TrashCan"]
+offset_left = 438.0
+offset_top = 249.0
+offset_right = 536.0
+offset_bottom = 308.0
+scale = Vector2(0.95, 0.9)
+theme_override_font_sizes/normal_font_size = 20
+text = "Put Trash Here"
+metadata/_edit_use_anchors_ = true
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(1036, 532)
+scale = Vector2(0.106481, 0.17037)
+texture = ExtResource("4_o0fos")
+
+[node name="Win" type="Sprite2D" parent="."]
+visible = false
+z_index = -10
+position = Vector2(1036, 532)
+scale = Vector2(0.106481, 0.17037)
+texture = ExtResource("5_06ng6")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="area_entered" from="TrashCan" to="." method="_on_trash_can_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

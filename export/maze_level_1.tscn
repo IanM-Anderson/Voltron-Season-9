@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://c4n454puht6lm"]
+
+[ext_resource type="Texture2D" uid="uid://bbyo6q8y4768r" path="res://level_1.svg" id="1_yqffi"]
+[ext_resource type="PackedScene" uid="uid://bt4pris48k22q" path="res://character.tscn" id="2_dj2rt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xqnl2"]
+size = Vector2(455, 265)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_djnwj"]
+size = Vector2(455, 319)
+
+[node name="MazeLevel1" type="RigidBody2D"]
+gravity_scale = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(457, 324.243)
+scale = Vector2(0.576826, 0.576826)
+texture = ExtResource("1_yqffi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(457.5, 133.5)
+shape = SubResource("RectangleShape2D_xqnl2")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(456.5, 488.5)
+shape = SubResource("RectangleShape2D_djnwj")
+
+[node name="Character" parent="." instance=ExtResource("2_dj2rt")]

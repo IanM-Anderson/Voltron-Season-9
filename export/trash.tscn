@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://3vl206wtwb05"]
+
+[ext_resource type="Script" path="res://trash.gd" id="1_4ha33"]
+[ext_resource type="Texture2D" uid="uid://do4tqfoupw0as" path="res://BagOfGarbage.png" id="2_c32k5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jpp5s"]
+radius = 39.0512
+
+[node name="Trash" type="Area2D"]
+script = ExtResource("1_4ha33")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 100
+position = Vector2(1, 1)
+scale = Vector2(0.310127, 0.275779)
+texture = ExtResource("2_c32k5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_jpp5s")
+
+[node name="Button" type="Button" parent="."]
+offset_left = -38.0
+offset_top = -40.0
+offset_right = 38.0
+offset_bottom = 39.0
+flat = true
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
